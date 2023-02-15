@@ -14772,6 +14772,9 @@ Print your name below
 <span class="n">new_directory</span> <span class="o">=</span> <span class="s2">&quot;clean_data/&quot;</span>
 <span class="n">old_path</span> <span class="o">=</span> <span class="n">old_directory</span> <span class="o">+</span> <span class="n">dataset_name</span>
 <span class="n">new_path</span> <span class="o">=</span> <span class="n">new_directory</span> <span class="o">+</span> <span class="n">dataset_name</span>
+
+<span class="n">dataset1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">old_path</span><span class="p">)</span>
+<span class="n">dataset1</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">new_path</span><span class="p">)</span>
 </pre></div>
 
      </div>
