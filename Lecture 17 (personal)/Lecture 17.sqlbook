@@ -99,8 +99,7 @@ Try it yourself!
 -- Select a new driver id (needs to be unique)
 -- Make sure to deparate arguments by a semicolon!
 
-
-
+INSERT INTO drivers  VALUES (786, 'Azam Lalani','The Best',1000000);
 -- SQLBook: Markup
 # <span style="color:darkblue"> II. Dataset Operations </span>
 
@@ -131,7 +130,7 @@ WHERE nationality = 'German';
 
 -- Evalute OR conditions
 SELECT * FROM drivers
-WHERE (nationality = 'United States') OR (nationality = 'Indian');
+WHERE (nationality = 'United States') OR (nationality = 'The Best');
 
 -- Evaluate AND conditions
 SELECT * FROM drivers
@@ -187,8 +186,8 @@ with more than 60 victories
 -- SQLBook: Code
 -- Write your own code!
 
-
-
+SELECT nationality, driver_id FROM drivers
+WHERE victories > 60;
 -- SQLBook: Markup
 # <span style="color:darkblue"> III. Groupby + Chaining </span>
 
